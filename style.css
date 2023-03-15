@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rubik+Iso&display=swap');
+
+
+body{
+    background-color: #eee;
+}
+
+h1{
+    font-family: "rubik iso";
+    font-size:50px;
+    text-align: center;
+}
+.container{
+    justify-content: center;
+    display: grid;
+}
+
+.block{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 5px;
+}
+
+.box{
+    display: inline-block;
+    border: 1px solid #018001;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0px;
+}
+
+.top{
+    border-top: none;
+}
+
+.bottom{
+    border-bottom: none;
+}
+
+.left{
+    border-left: none;
+}
+
+.right{
+    border-right: none;
+}
+
+span{
+    position: absolute;
+    font-size: 75px;
+    font-family: "press start 2p";
+    text-align: center;
+    height: 75px;
+    width: 75px;
+    padding: 0;
+    margin: 5px;
+    margin-left: -35px;
+}
+
+.alert{
+    height: 80px;
+    width: 135px;
+    display: inline-block;
+    background: ghostwhite;
+    position: relative;
+    z-index: 7;
+    margin-top: -50%;
+    border-radius: 20px;
+    box-shadow: 0 0 75px 2px dimgray;
+    animation: larger 0.5s;
+    -webkit-animation: larger 0.5s;
+    -moz-animation: larger 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.activeBox{
+    background: #018001;
+}
+
+button{
+    background: #018001;
+}
+
+
+button:focus{
+background: #F8EE1E;
+}
